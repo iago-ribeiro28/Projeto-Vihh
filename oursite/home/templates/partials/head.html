@@ -6,9 +6,70 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/solid.min.css" integrity="sha512-F65MsQcUqnYC7fOE5OrV/jETVn0ANBJjJ7Pe45tVmx7yr7SlHISUdPUiVap4+G79+7b5arc6xcoxPeJlPGepPg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <title>Amorzinho</title>
 
     <style>
+        :root {
+            /* Cores Principais - Roxo */
+            --roxo-escuro: #4A1A5E;
+            --roxo-medio: #7B2D8E;
+            --roxo-vibrante: #9B4DCA;
+            --roxo-claro: #B87BD8;
+            --roxo-suave: #D4A5E8;
+            --roxo-pastel: #E8C5F2;
+            --roxo-muito-claro: #F3E5F5;
+            
+            /* Cores de Apoio */
+            --rosa-suave: #F8D7E6;
+            --rosa-claro: #FCE4EC;
+            --branco: #FFFFFF;
+            --preto-suave: #2C2C2C;
+            --cinza-claro: #F5F0F8;
+            --cinza-medio: #9E9E9E;
+            
+            /* Cores de Destaque */
+            --dourado: #D4A574;
+            --prata: #C0C0C0;
+            --lavanda: #E6D7F0;
+            
+            /* Cores para Texto */
+            --texto-principal: #2C2C2C;
+            --texto-claro: #6B4B7A;
+            --texto-branco: #FFFFFF;
+            
+            /* Cores para Fundo */
+            --fundo-principal: #F8F0FA;
+            --fundo-secundario: #F0E6F5;
+            --fundo-destaque: #E8D5EE;
+            
+            /* Cores para Botões e Links */
+            --botao-principal: #7B2D8E;
+            --botao-hover: #9B4DCA;
+            --botao-texto: #FFFFFF;
+            --link-cor: #7B2D8E;
+            --link-hover: #9B4DCA;
+            
+            /* Cores para Bordas e Sombras */
+            --borda-suave: #D4A5E8;
+            --borda-destaque: #9B4DCA;
+            --sombra-suave: rgba(123, 45, 142, 0.1);
+            --sombra-media: rgba(123, 45, 142, 0.2);
+            --sombra-forte: rgba(123, 45, 142, 0.3);
+            
+            /* Gradientes Úteis */
+            --gradiente-principal: linear-gradient(135deg, #4A1A5E, #9B4DCA);
+            --gradiente-suave: linear-gradient(135deg, #E8C5F2, #F3E5F5);
+            --gradiente-romantico: linear-gradient(135deg, #7B2D8E, #D4A5E8);
+
+            --font-primary: sans-serif;
+            --font-head: 'Roboto Slab', serif;
+
+            }
+
         * {
             padding: 0;
             margin:0;
@@ -21,7 +82,40 @@
 
         body {
             font-size: 1.6rem;
+            background-color: var(--cinza-claro);
         }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-head);
+        }
+
+        .container{
+            max-width: 144rem;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .main-header-container{
+            background-color: var(--roxo-vibrante);
+            font: var(--font-head);
+        }
+        
+        .main-logo{
+            font-size: 2rem;
+            color:var(--branco);
+            text-decoration: none;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .main-logo-icon{
+            margin-right: -1rem;
+        }
+
     </style>
 
 </head>
