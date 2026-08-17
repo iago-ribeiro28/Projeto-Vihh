@@ -6,10 +6,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/solid.min.css" integrity="sha512-F65MsQcUqnYC7fOE5OrV/jETVn0ANBJjJ7Pe45tVmx7yr7SlHISUdPUiVap4+G79+7b5arc6xcoxPeJlPGepPg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/regular.min.css" integrity="sha512-qiqIzB1QO9jGOxfzFFbQipiNRu0pLW2NOASTcXCf72M6MFHk4JAsDj/BnTJ0YKQ6xb0N500LJPwPJNf+AVU0HQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <title>Amorzinho</title>
 
     <style>
@@ -66,7 +67,7 @@
             --gradiente-suave: linear-gradient(135deg, #E8C5F2, #F3E5F5);
             --gradiente-romantico: linear-gradient(135deg, #7B2D8E, #D4A5E8);
 
-            --font-primary: sans-serif;
+            --font-primary: 'Cormorant Garamond', serif;
             --font-head: 'Roboto Slab', serif;
 
             }
@@ -91,7 +92,7 @@
         }
 
         .container{
-            max-width: 144rem;
+            max-width: 110rem;
             margin: 0 auto;
             padding: 2rem;
         }
@@ -115,6 +116,69 @@
 
         .main-logo-icon{
             margin-right: -1rem;
+        }
+
+        .foto-1 {
+            width: 450px;
+            height: auto;
+            border-radius: 50px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .first-text {
+            display: flex;
+            align-items: flex-start;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            
+            gap: 2.5rem;
+            flex: 1;
+        }
+
+        .text-1,
+        .text-2 {
+            font-family: var(--font-primary);
+            font-size: 2rem;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            display: block;
+            color: var(--texto-principal);
+        }
+
+        .text-1 {
+            padding-top: 3rem;
+        }
+
+        .text-2 {
+            padding-top: 0;
+        }
+
+        .icon-birthday {
+            font-size: 1.8rem;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .icon-gift {
+            color: #FF4FA3;
+        }
+
+        .icon-smile {
+            color: #fbb719;
+        }
+
+        .icon-cake {
+            color: #7B2D8E;
+        }
+
+        .icon-sun{
+            color: #fbb719;
         }
 
     </style>
